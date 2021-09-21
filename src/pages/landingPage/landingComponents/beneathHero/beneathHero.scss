@@ -1,0 +1,114 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+/* beneath the fold styles */
+.beneath-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: v.$bluePrint;
+  padding-bottom: 2rem;
+  width: 100vw;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    gap: 1rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.beneath-text-wrapper {
+  width: 100vw;
+  margin-bottom: 1rem;
+
+  @include m.smMinBreakPoint {
+    width: 39.375rem;
+    margin-top: 2rem;
+  }
+
+  @include m.mdMinBreakPoint {
+    width: 39.375rem;
+    margin-top: 5rem;
+  }
+}
+
+.text-fold1 {
+  text-align: left;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: v.$shadeFive;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include m.smMinBreakPoint {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  @include m.lgMinBreakPoint {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+.text-fold2 {
+  text-align: left;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: v.$shadeFive;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+
+  @include m.smMinBreakPoint {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+    line-height: 16px;
+  }
+  @include m.lgMinBreakPoint {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+    line-height: 22px;
+  }
+}
+
+.fold-image {
+  width: 100vw;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+
+  @include m.smMinBreakPoint {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    overflow-y: visible;
+    width: auto;
+    height: auto;
+  }
+
+  @include m.lgMinBreakPoint {
+    margin-right: 5rem;
+    overflow-y: visible;
+    width: auto;
+    height: 28rem;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

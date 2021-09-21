@@ -1,0 +1,3 @@
+/* 
+This partial stores the actual @keyframe CSS animations. It helps to drastically reduce the size of component stylesheets. In our example this file stores 22 animations, which is almost 800 lines of code! That is a lot of space saved in our component files, that now just need to reference this file.
+*/

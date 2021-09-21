@@ -1,0 +1,132 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.event-preview {
+  background: v.$lightTwo;
+  width: 100vw;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 5rem;
+    background: v.$primaryAccent;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 12rem;
+  }
+}
+
+.preview-video-wrapper {
+  width: 100vw;
+  height: 26vh;
+
+  @include m.smMinBreakPoint {
+    width: 50vw;
+    height: auto;
+  }
+
+  @include m.mdMinBreakPoint {
+    max-width: 44.375rem;
+    height: auto;
+  }
+}
+
+.event-preview-text-wrapper {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    max-width: 40vw;
+  }
+}
+.event-preview-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include m.smMinBreakPoint {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: v.$shadeOne;
+  }
+}
+
+.event-preview-btn {
+  color: v.$primaryColor;
+  background: v.$bluePrint;
+  height: 26px;
+  width: 106px;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.event-preview-btn:hover {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 8%);
+  border-radius: 2px;
+  font-size: 12px;
+  margin-top: 0;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.event-preview-btn:focus {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 20%);
+  border-radius: 2px;
+  font-size: 12px;
+  margin-top: 0;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+    margin-top: 0rem;
+  }
+}
+
+.preview-form {
+  @include m.smMinBreakPoint {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+}
+
+.preview-overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

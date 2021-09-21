@@ -1,0 +1,71 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include m.mdMinBreakPoint {
+    max-width: 26rem;
+  }
+}
+
+.position {
+  text-align: left;
+  color: v.$shadeFour;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 24px;
+    line-height: 92%;
+    margin-left: 1rem;
+  }
+}
+
+.text-wrap {
+  background: v.$primaryAccent;
+  padding-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    background: v.$primaryAccent;
+    max-width: 26rem;
+  }
+}
+
+.name {
+  text-align: left;
+  color: v.$shadeTwo;
+  background: v.$primaryAccent;
+  font-size: 18px;
+  line-height: 22px;
+
+  @include m.mdMinBreakPoint {
+    font-size: 18px;
+    line-height: 122%;
+    margin-left: 16px;
+  }
+}
+
+.bio {
+  text-align: left;
+  color: v.$shadeOne;
+  background: v.$primaryAccent;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 3rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 16px;
+    line-height: 137%;
+    margin-left: 16px;
+  }
+}
+
+.guest-list-card-image-wrapper {
+  @include m.mdMinBreakPoint {
+    max-height: auto;
+    max-width: 26rem;
+  }
+}

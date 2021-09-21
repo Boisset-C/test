@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+/* 
+This partial contains repeatable property values, such as brand colors and sizes. By storing #002e25 in the variable $primaryDark2Color I can apply it to properties like color and border while preserving the option to change the color globally later on.
+*/
+
+/* FONT FAMILY */
+$arimoFont: "Arimo", sans-serif;
+
+/* COLOR THEME */
+
+/* Base Color */
+$primaryColor: #f8f8f8;
+$primaryAccent: #ffffff;
+
+/* Dark Color */
+$primaryDarkColor: #2b2424;
+$primaryDarkAccent: #000000;
+
+/* color for title above the livestream event */
+$broadcastDark: #27262c;
+
+/* Blueprint */
+$bluePrint: #3c64b1;
+
+// active color
+$activeBluePrint: rgb(60, 50, 177);
+
+// hover color
+$hoverBluePrint: rgb(60, 80, 177);
+
+/* Color Shade One */
+$shadeOne: #403e3e;
+
+/* Color Shade Two */
+$shadeTwo: #615e5e;
+
+/* Color Shade Three */
+$shadeThree: #797979;
+
+/* Color Shade Four */
+$shadeFour: #bebebe;
+
+/* Color Shade Five */
+$shadeFive: #e5e5e5;
+
+/* Warning Color */
+$warningColor: #c43256;
+
+/* Light One */
+$lightOne: #e5e5e5;
+
+/* Light Two */
+$lightTwo: #f8f8f8;
+
+/* Card Position Background Colors */
+$positionBackground: rgba(60, 100, 177, 0.04);
+
+/* SCREEN SIZES */
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1300px;
+$screen-full: 1400px;

@@ -1,0 +1,50 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 3.5rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 85px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100vw;
+
+    color: v.$shadeOne;
+  }
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 3rem;
+  justify-items: center;
+  width: 100vw;
+
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+.partner-svg {
+  height: 40%;
+  width: 40%;
+}

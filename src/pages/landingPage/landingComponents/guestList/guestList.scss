@@ -1,0 +1,15 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.guest-list-container {
+  background: v.$positionBackground;
+  padding-bottom: 1rem;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.archive-replay-section {
+  background: v.$positionBackground;
+
+  @include m.smMinBreakPoint {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.archive-section-ul-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding-left: 0.75rem;
+}
+
+.archive-replay-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0rem;
+  margin-left: 0.75rem;
+  color: v.$shadeTwo;
+
+  @include m.smMinBreakPoint {
+    margin-left: 5.8rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.archive-flex-li {
+  list-style: none;
+  margin-bottom: 1rem;
+}

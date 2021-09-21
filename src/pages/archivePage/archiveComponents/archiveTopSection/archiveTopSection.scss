@@ -1,0 +1,27 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.archive-top-section-container {
+  width: 100vw;
+  height: 7.75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include m.mdMinBreakPoint {
+    height: 16rem;
+  }
+}
+
+.archive-page-title {
+  text-align: center;
+  color: v.$bluePrint;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  margin-top: 1rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}

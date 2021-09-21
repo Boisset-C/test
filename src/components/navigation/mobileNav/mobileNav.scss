@@ -1,0 +1,28 @@
+.mobile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100vw;
+}
+a {
+  margin-top: 32px;
+  margin-left: 12px;
+  width: 66px;
+  height: 24;
+}
+button,
+button:focus {
+  margin-top: 32px;
+  margin-right: 12px;
+  outline: none;
+  background: transparent;
+  border: 0px solid transparent;
+  width: 14px;
+  height: 10px;
+}
+
+button:active {
+  outline: none;
+  background: transparent;
+  border: 0px solid transparent;
+}

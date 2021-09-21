@@ -1,0 +1,62 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.broadcast-container {
+  @include m.xxlMinBreakPoint {
+    margin-left: 12rem;
+  }
+}
+
+.event-start-time {
+  font-size: 8px;
+  line-height: 9px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  color: v.$broadcastDark;
+  margin-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    margin-left: 7.2rem;
+    margin-bottom: 0rem;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+  }
+  @include m.lgMinBreakPoint {
+    margin-left: 11.4rem;
+    margin-bottom: 0rem;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+  }
+}
+
+.live-stream-wrapper {
+  position: relative;
+  padding-top: 40%;
+  height: 26vh;
+  width: 100vw;
+
+  @include m.smMinBreakPoint {
+  }
+  @include m.xxlMinBreakPoint {
+    height: auto;
+    width: 80vw;
+  }
+}
+
+.react-player-event-broadcast {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  z-index: 1;
+
+  @include m.smMinBreakPoint {
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,108 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.hero-container {
+  height: auto;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include m.smMinBreakPoint {
+    height: 56.25rem;
+    width: 100vw;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: auto;
+  }
+}
+
+.hero-header {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.register-btn {
+  color: v.$primaryColor;
+  height: 26px;
+  width: 106px;
+  background: v.$bluePrint;
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.register-btn:hover {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 8%);
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.register-btn:focus {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 20%);
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.white-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-form {
+  @include m.smMinBreakPoint {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+}
+
+.hero-overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,95 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.cta-wrapper {
+  margin-left: 0.75rem;
+  margin-bottom: 5rem;
+
+  @include m.smMinBreakPoint {
+    max-width: 39.375rem;
+    margin-left: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin: auto;
+  }
+}
+
+.cta-description {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeOne;
+
+  @include m.smMinBreakPoint {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.register-btn {
+  color: v.$primaryColor;
+  height: 26px;
+  width: 106px;
+  background: v.$bluePrint;
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.register-btn:hover {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 8%);
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.register-btn:focus {
+  width: 106px;
+  height: 26px;
+  background: darken(v.$bluePrint, 20%);
+  border-radius: 2px;
+  font-size: 12px;
+
+  @include m.smMinBreakPoint {
+    width: 18.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+  }
+}
+
+.cta-form {
+  @include m.smMinBreakPoint {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+}
+
+.cta-overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

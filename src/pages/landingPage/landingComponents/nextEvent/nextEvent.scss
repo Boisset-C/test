@@ -1,0 +1,183 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.next-event-container {
+  display: flex;
+  flex-direction: column;
+
+  @include m.smMinBreakPoint {
+  }
+
+  @include m.xxlMinBreakPoint {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 12rem;
+  }
+}
+
+.next-event-title {
+  text-align: center;
+  color: v.$bluePrint;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  margin-top: 3rem;
+
+  @include m.smMinBreakPoint {
+    margin-top: 6.125rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 157%;
+  }
+}
+
+.next-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  @include m.smMinBreakPoint {
+    margin-top: 0rem;
+    margin-left: 3rem;
+    align-self: flex-start;
+  }
+}
+
+.next-event-desktop-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: v.$shadeTwo;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  height: min-content;
+  white-space: wrap;
+  padding-right: 0.5rem;
+}
+
+.next-event-mobile-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 167%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: v.$shadeTwo;
+}
+
+.image-summary-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: auto;
+  }
+
+  @include m.lgMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.event-day {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  color: v.$bluePrint;
+
+  @include m.smMinBreakPoint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+.pst {
+  font-size: 1rem;
+  @include m.mdMinBreakPoint {
+    font-size: 1.5rem;
+  }
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-left: 0.75rem;
+
+  @include m.smMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+.time-wrapper {
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.am {
+  align-self: flex-end;
+
+  @include m.smMinBreakPoint {
+    font-size: 1rem;
+  }
+}
+
+.summary {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin-bottom: 5rem;
+
+  color: v.$primaryDarkColor;
+
+  @include m.smMinBreakPoint {
+    width: 36vw;
+    margin-right: 5rem;
+    margin-left: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    width: 36vw;
+    margin-right: 5rem;
+  }
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 3rem;
+
+  @include m.mdMinBreakPoint {
+    height: 20rem;
+    width: auto;
+  }
+
+  @include m.xxlMinBreakPoint {
+    width: max-content;
+    height: max-content;
+  }
+}

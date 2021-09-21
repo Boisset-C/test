@@ -1,0 +1,40 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+.event-test-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+  background: v.$positionBackground;
+
+  @include m.smMinBreakPoint {
+    flex-direction: row;
+    margin: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+  }
+  @include m.xxlMinBreakPoint {
+    margin-right: 12rem;
+    margin-left: 6rem;
+  }
+}
+
+.flex-item-upcoming-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.flex-item-test-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}

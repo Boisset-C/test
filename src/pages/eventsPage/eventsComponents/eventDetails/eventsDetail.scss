@@ -1,0 +1,59 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.event-broadcast-container {
+  margin-left: 0.75rem;
+  margin-right: 00.75rem;
+
+  @include m.mdMinBreakPoint {
+    width: 50vw;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 17.2rem;
+  }
+}
+
+.event-broadcast-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.event-broad-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.event-broadcast-description {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeOne;
+
+  @include m.mdMinBreakPoint {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

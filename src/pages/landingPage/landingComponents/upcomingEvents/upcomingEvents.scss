@@ -1,0 +1,38 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.upcoming-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  @include m.xxlMinBreakPoint {
+    margin-left: 20vw;
+  }
+}
+
+.upcoming-events-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 0.75rem;
+  color: v.$primaryDarkColor;
+
+  @include m.smMinBreakPoint {
+    color: v.$shadeOne;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 20vw;
+  }
+}

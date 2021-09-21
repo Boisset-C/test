@@ -1,0 +1,92 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+.contact-form-container {
+  background: v.$bluePrint;
+  padding: 2rem;
+  width: 100vw;
+  height: 100%;
+
+  @include m.mdMinBreakPoint {
+    width: min-content;
+  }
+}
+
+.form-wrapper {
+  z-index: 1;
+}
+
+.form-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include m.mdMinBreakPoint {
+  }
+}
+
+.contact-form-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 4.375rem;
+  margin-bottom: 1.5rem;
+  color: v.$primaryAccent;
+
+  @include m.mdMinBreakPoint {
+    font-size: 30px;
+    line-height: 40px;
+    white-space: nowrap;
+  }
+}
+
+.contact-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: v.$primaryColor;
+
+  @include m.mdMinBreakPoint {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.contact-input {
+  width: 301px;
+  height: 40px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: v.$shadeFour;
+  background: #f8f8f8;
+  border-radius: 2px;
+  padding-left: 0.5rem;
+
+  @include m.mdMinBreakPoint {
+    width: 20rem;
+  }
+}
+
+.form-register-btn {
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  width: 301px;
+  height: 42px;
+  margin-top: 1rem;
+  text-align: center;
+  letter-spacing: 0.4px;
+  background: v.$bluePrint;
+  border: 1px solid v.$primaryColor;
+  color: v.$primaryColor;
+
+  @include m.mdMinBreakPoint {
+    width: 20rem;
+  }
+}

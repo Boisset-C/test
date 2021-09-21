@@ -1,0 +1,55 @@
+@use "../../../sassStyles/variables" as v;
+@use "../../../sassStyles/mixins" as m;
+
+.sidebar-container {
+  position: fixed;
+  margin-left: 0px;
+  width: 90vw;
+  height: 100vh;
+  background-color: v.$bluePrint;
+  z-index: 2;
+}
+
+.sidebar-close-icon {
+  padding: 1rem;
+  text-align: right;
+}
+
+.sidebar-logo {
+  padding-bottom: 7rem;
+}
+
+.sidebar-nav {
+  overflow: visible;
+  display: block;
+  position: absolute;
+  list-style: none;
+  margin-top: 0px;
+  opacity: 1;
+  width: 90vw;
+}
+
+.sidebar-list-item {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.sidebar-active-link {
+  color: #ffffff;
+}
+
+.sidebar-link:hover {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}

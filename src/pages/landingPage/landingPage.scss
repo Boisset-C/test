@@ -1,0 +1,8 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+.bg-color-guestlist {
+  width: 100vw;
+  background-color: v.$positionBackground;
+  margin-left: auto;
+}

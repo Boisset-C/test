@@ -1,0 +1,65 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.ucwg-container {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    width: 39rem;
+    height: 21.375;
+    padding: 1rem;
+    margin-left: 0rem;
+  }
+}
+
+.ucwg-title {
+  text-align: left;
+  margin-left: 0.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.ucwg-description {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 0.75rem;
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.ucwg-upcoming-card-time {
+  text-align: left;
+  margin-left: 0.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
